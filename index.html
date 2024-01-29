@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ 
+  <title>spotfinder</title>
+  
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+     font-family: system-ui;
+    }
+    nav{
+      width: 100;
+      background-color: whitesmoke;
+      border-bottom: 1px solid black;
+      position: sticky ;
+      
+    }
+    .main{
+      padding: 0 60px;
+      font-family: sans-serif;
+      
+    }
+   nav>ul{
+      display: flex;
+      justify-content: center;
+     
+    }
+    nav>ul>li{
+      list-style-type: none;
+      padding: 14px 16px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+    .hhhh{
+    position: absolute;
+    right: 3px;
+    top:20px;
+   
+      
+    }
+      .login{
+     
+      border: none;
+      font-size: 14px;
+      font-weight: bold;
+     margin-right: 30px;
+     
+    }
+    .register {
+      border:none;
+      background-color:tomato;
+     border-radius: 15px;
+    color:white;
+    font-size: 14px;
+   padding: 5px;
+  font-weight:bold;
+ 
+    }
+    nav>.image1{
+     width: 150px;
+     position: absolute;
+   top: 10px;
+   left:10px;
+    }
+    nav>.image2{
+      width: 40px;
+      position: absolute;
+      right:210px;
+      top: 12px;
+    }
+    
+  .page1{
+    background-color: whitesmoke;
+    margin-top: 40px;
+  }
+  .page1under{
+    padding: 50px 50px 30px 50px;
+  }
+  .page1under>h1{
+    font-weight: normal;
+    font-size: 45px;
+    letter-spacing: 0.90px;
+    margin-bottom: 15px;
+  }
+  .page1under>h1>span{
+    color: tomato;
+    letter-spacing: 0.90px;
+  }
+  .page1under>p{
+    font-size :20px;
+    margin-block: 10px;
+    text-transform: capitalize;
+  }
+  
+    input[type="text"], input[type="datetime-local"]{
+    width: 100%;
+    height: 50px;
+    border: 2px solid red ;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    background-color: white;"
+    
+  }
+  input::placeholder {
+    color: black;
+   
+  }
+  .page1under>form>select{
+    width: 100%;
+    height: 40px;
+    border: 2px solid red;
+    padding-left: 35px;
+    margin-bottom: 30px;
+    background-color: white;
+  }
+  .page1under>.haha{
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px 50px;
+    border-radius: 25px;
+    
+  }
+ 
+  .page2>.tt{
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+  }
+ .page2>.ts{
+   text-align: center;
+   margin: 10px 0;
+   
+ }
+ .page2under{
+   background-color: white;
+   width: 100%;
+   padding: 0 90px;
+   border: 1px ridge  ;
+ }
+ .page2under>.image1{
+   width: 100%;
+   height: 180px;
+   object-fit: cover;
+ }
+ .btn1{
+   background-color: red;
+   border: none;
+   color: white;
+   padding: 10px 20px;
+   font-weight: bold;
+   font-size: 10px;
+   border-radius: 20px;
+margin: 40px auto 20px;
+display: block;
+ }
+ .page2under>.image2{
+   width: 100%;
+   height: 180px;
+   object-fit: cover;
+ }
+ .page2under>.image3{
+   width: 100%;
+   height: 180px;
+   object-fit: cover;
+ }
+ .page3{
+   width: 100%;
+   background-color: red;
+  margin-top: 70px;
+  border-radius: 20px;
+   
+ }
+ .page3>.bc{
+   font-size: 40px;
+   text-align: center;
+   font-weight: 700;
+   color: white;
+   padding:60px 0 20px;
+   let
+  letter-spacing: 2px;
+ }
+ .page3>.itnaa{
+   font-weight:400;
+   text-align: center;
+   color: white;
+ }
+ 
+ .page3under>.box1{
+   background-color: white;
+   width: 240px;
+   border-radius: 10px;
+   text-align: center;
+   margin: 20px auto;
+   padding: 10px; 
+   
+ }
+ .box1>.image11{
+   padding-top: 50px; 
+   width: 80px;
+   padding-bottom: 10px;
+   
+  
+ }
+ .box1>.itna11{
+   padding: 10px 0 15px;
+   font-size: 13px;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+ 
+  
+ 
+ 
+  .page3under>.box2{
+   background-color: white;
+   width: 240px;
+   border-radius: 10px;
+   text-align: center;
+   margin: 20px auto;
+   padding: 10px; 
+   
+ }
+  
+ .box2>.image12{
+   padding-top: 50px; 
+   width: 80px;
+   padding-bottom: 10px;
+   
+  
+ }
+ .box2>.itna12{
+   padding: 10px 0 15px;
+   font-size: 13px;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+ 
+   .page3under>.box3{
+   background-color: white;
+   width: 240px;
+   border-radius: 10px;
+   text-align: center;
+   margin: 20px auto 20px;
+   
+   padding: 10px; 
+   
+ }
+ 
+ .box3>.image13{
+   padding-top: 50px; 
+   width: 80px;
+   padding-bottom: 10px;
+   
+  
+ }
+ .box3>.itna13{
+   padding: 10px 0 15px;
+   font-size: 13px;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+  .page4>.ss{
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+  }
+   .page4under{
+   background-color: white;
+   width: 100%;
+   padding: 0 90px;
+   border: 1px ridge  ;
+ }
+ .page4under>.image22{
+   width: 100%;
+   height: 180px;
+   object-fit: cover;
+ }
+  .page4under>.pi1{
+   text-align: center;
+   font-weight: 500;
+   margin-top: 10px;
+   font-size: 25px;
+ }
+ .btn2{
+   background-color: red;
+   border: none;
+   color: white;
+   padding: 10px 20px;
+   font-weight: bold;
+   font-size: 15px;
+   border-radius: 20px;
+margin: 40px auto 20px;
+display: block;
+ }
+ .page4under>.image23{
+   width: 100%;
+   height: 180px;
+   object-fit: cover;
+ }
+   .page4under>.pi2{
+   text-align: center;
+   font-weight: 500;
+   margin-top: 10px;
+   font-size:  25px;
+ }
+ .page4under>.image24{
+   width: 100%;
+   height: 180px;
+   object-fit: cover;
+ }
+   .page4under>.pi3{
+   text-align: center;
+   font-weight: 500;
+   margin-top: 10px;
+   font-size: 25px;
+ }
+  .page4under>.image25{
+   width: 100%;
+   height: 180px;
+   object-fit: cover;
+ }
+   .page4under>.pi4{
+   text-align: center;
+   font-weight: 500;
+   margin-top: 10px;
+   font-size: 25px;
+ }
+ .page5{
+    margin-top: 100px;
+   background-color: white;
+   width: 100%;
+   padding: 40px;
+   border: 1px ridge  ;
+ 
+ }
+.page5>div>.circle{
+  width: 60px;
+  height: 60px;
+  background-color: #B4B5B9;
+  border-radius: 30px;
+}
+.page6>.page6under{
+  margin-top: 100px;
+  background-color: black;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+ 
+}
+
+.page6under>img{
+  opacity: 0.6;
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+
+.page6under>h3{
+position: absolute;
+top: 150px;
+left: 240px;
+font-weight: 500;
+font-size: 30px;
+color: white;
+}
+.page6under>.jj{
+  position: absolute;
+top: 220px;
+left: 170px;
+font-size: 25px;
+  font-weight: bold;
+  color: white;
+  
+}
+.page6under>.kk{
+  position: absolute;
+  top: 300px;
+  left: 340px;
+  border: none;
+  background-color: red;
+  padding: 15px 25px;
+  color: white;
+  border-radius: 30px;
+  font-weight: bold;
+}
+.page7 {
+  margin: 60px 0 30px 200px;
+}
+.page8{
+  border-top: 4px solid red;
+  background-color: #F0F5E6;
+  
+}
+.page8under{
+  padding:60px 50px;
+}
+.num1>.ee1{
+  padding-top:20px; 
+  color: lightseagreen;
+  
+}
+.num2>.ee2{
+  padding-top:20px; 
+  color: lightseagreen;
+}
+.num3>.ee3{
+  padding-top:20px; 
+  color: lightseagreen;
+}
+.num4>.btn6{
+  margin-top: 10px;
+  background-color: none;
+  border: 2px solid blue;
+  color: blue;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+.btn6>span{
+  font-weight:900;
+  font-size: 20px; 
+}
+  </style>
+  
+  
+  
+  
+</head>
+
+<body>
+ 
+  <nav>
+    
+    <img class="image1" src="images/spot.png" alt="">
+     
+      <img class="image2" src="images/lock.png" alt="ima">   
+       
+  
+    <ul>
+       
+      <li>Home</li>
+      <li>feature</li>
+      <li>Blog</li>
+      <li>become a partner</li>
+         
+    </ul>
+  <div class="hhhh">
+    
+    <button class="login">Login</button>
+    <button  class="register">Register</button>
+   </div>     
+  </nav> 
+   
+  <div class="main">
+    
+    <div class="page1">
+      <div class="page1under">
+        
+      
+     <h1>Parking <span>Simplified</span></h1>
+     <p>Easily find a parking space now!</p>
+     <form action="www.example.com">  <label for="locat"></label>
+       <input type="text" name="location" id="locat" placeholder="Your Location">
+       
+       <select name="seleton" id="seleton">
+         <option value="select Vehicle category "selected disabled>select Vehicle category</option>
+       <option value="Car">Car</option>
+       <option value="Event">Event</option>
+       <option value="valet">valet</option>
+       <option value="Semi ">Semi Truck </option>
+       
+       </select>
+       <label for="time"> </label>
+       <input type="datetime-local" value="date&time" id="time" placeholder="check in">
+       
+           <label for="time"> </label>
+       <input type="datetime-local" value="date&time" id="time" placeholder="check in">
+       </form>
+       <br>
+       <br>
+    <span class="haha">Search Parking Spaces</span>
+       
+     </div>
+    </div>
+    
+   <div class="page2">
+     <h1 class="tt">We are everywhere!</h1>
+     <p class="ts">Find a new home for your car."</p>
+     <div class="page2under">
+       
+      <img class="image1" src="images/carimage.jpg" alt="image">
+      <p style="text-align: center">
+        Car Parking 
+     </p> 
+     <button class="btn1">Find u parking</button>
+      <img class="image2" src="images/trucks.jpg" alt="images">
+        <p style="text-align: center">
+        Semi Truck Parking 
+     </p> 
+     <button class="btn1">Find u parking</button>
+      <img class="image3" src="images/pool.jpg" alt="nwn">
+         <p style="text-align: center">
+        Airport parking 
+     </p> 
+       <button class="btn1">Find u parking</button>
+     </div>
+    
+     
+   </div> 
+    
+    <div class="page3">
+   <h1 class="bc">Why Spot Finder?</h1>   
+   <p class="itnaa">We understand the pain for finding <br>the right spot where your car feels <br> home. Handicap friendly spots, <br> diligent customer support we aim <br> to comfort you with nearest parking <br> spot!</p>
+   
+   <div class="page3under">
+     
+   
+   <div class="box1">
+      <img class="image11" src="images/clock.jpg" alt="">
+      <h4>it's fast</h4>
+      <p class="itna11">Our new makes finding spots in <br> not more than 3 steps. we're building <br> the largest network of parking spots!</p>
+   </div>
+
+    
+   <div class="box2">
+      <img class="image12" src="images/emoji.jpg" alt="" />
+      <h4>it's easy</h4>
+      <p class="itna12">We aim to keep you hooked to our<br> services with an experience excellence<br> team!</p>
+   </div>
+ 
+    <div class="box3">
+      <img class="image13" src="images/wallet.jpg" alt="" />
+      <h4>it's affordable</h4>
+      <p class="itna13">Find affordable spots and spend your<br> days stress-free while your car is<br> parked with us.</p>
+   </div>
+   </div>
+   .
+    </div>
+    
+    <div class="page4">
+   <h2 class="ss">Airport Parking</h2>
+    
+    
+        <div class="page4under">
+       
+      <img class="image22" src="images/trucksss.jpg" alt="image">
+      <p class="pi1"> 
+        Days Inn by Wynd...
+     </p> 
+     <p style="text-align: center; margin-top: 25px;">days Inn by Wyndham hotel</p>
+     <button class="btn2">Book Now</button>
+      <img class="image23" src="images/airport area.jpg" alt="images">
+         <p class="pi2"> 
+        Days Inn by Wynd...
+     </p>   
+          <p style="text-align: center; margin-top: 25px;">Da</p>
+        
+     <button class="btn2">Book Now</button>
+   
+      <img class="image24" src="images/building.png" alt="nwn">
+           <p class="pi3"> 
+        Home2 Suites by...
+     </p>  
+          <p style="text-align: center; margin-top: 25px;">Th</p>
+         
+         
+       <button class="btn2">Book Now</button>
+       
+          <img class="image25" src="images/area building .jpg" alt="nwn">
+        
+           <p class="pi4"> 
+       Holiday Inn Express.. 
+     </p> 
+             <p style="text-align: center; margin-top: 25px;">Holiday Inn Express & Suites</p>
+        
+        
+       <button class="btn2">Book Now</button>
+       
+     </div>
+     
+    
+    
+   
+      
+    </div>
+   
+   
+   <div class="page5" >
+     <div style="display: flex;">
+       
+     
+     <div class="circle" >
+       
+     </div>
+     <div style="padding: 5px 0 5px 20px; font-weight: bold; font-size: 20px; text-align: justify;">
+       
+     <p  style="padding: 2px 5px;">Anonymous</p>
+       <p>⭐⭐⭐⭐⭐</p>
+     </div>
+     
+       
+     </div>
+     <p style="margin-top: 40px; letter-spacing: 0.20px;">We Loved using spotfinder.It was easy and simple for us. I am 80 years old and we liked how easy <br>it was to do a booking.</p>
+     
+     <p style="margin-top: 10px; color: darkred; margin-bottom: 10px; font-weight: bold;">Read more >></p>
+    
+   </div>
+   
+   
+  <div class="page6">
+        <div class="page6under">
+    
+    <img src="images/twomens.jpg" alt="images/twomens.jpg">
+    
+    
+      
+     <h3>Partner With Spot Finder</h3>
+      
+      <p class="jj">Grow your business by your services with us.</p>
+      <button class="kk">Become a partner </button>
+    </div>
+    
+   
+  </div> 
+ 
+   
+   <div class="page7">
+     
+     <h2 style="margin-bottom:15px; text-transform: uppercase; ">Subscribe</h2>
+     <p style="margin-bottom:15px;">Subscribe to our Spot finder & stay Updated</p>
+     
+     <label for="email"></label>
+     <input type="email" name="email" id="email"
+      placeholder="Enter Your Email" style="width: 50%; height: 40px; padding: 20px; border: ridge; background-color: whitesmoke;">
+      
+    
+     <input type="button" name="sumbit" value="Subscribe" style ="width: 100px; height: 42px; margin: 0; background-color: red; border: none; color: white; border-radius: 0 10px 10px 0">
+     
+   </div>
+   </div>
+    
+    <div class="page8">
+    <div class="page8under" style="display: flex;
+     flex-wrap: wrap;">
+      
+      <div class="num1" style="margin-right: 60px;">
+      <h2 style="color: red;">About Us</h2>
+      <p class="ee1">As Travellers and preplanners on a trip, we hate not being <br>able to find parking on a reliable site.We decided to solve <br>this by starting in house!</p>
+        
+        
+      </div>
+       <div class="num2" style="margin-right: 60px;">
+      <h2 style="color: red;">Company</h2>
+      <p class="ee2">Privacy Policy<br>Cancellation Policy<br>Terms and Conditions</p>
+        
+        
+      </div> 
+   
+   
+       <div class="num3 " style="margin-right: 80px; margin-top: 50px;" >
+      <h2 style="color: red;">Contact Info</h2>
+      <p class="ee3">Contact@Spotfinder.app <br />833-799-7770<br>Fort Lauderdale Florida <br>Contact Support</p>
+        
+        
+      </div> 
+   <div class="num4" style="margin: 50px 2px 2px 200px;">
+     <h2 style="color: red;">Payment Accepted</h2>
+     <button  class="btn6"> powered by <span>stripe</span></button>
+     
+     
+   </div>
+   
+   
+   
+    </div>
+  
+<div class="dfs" style="padding: 10px 100px 10px 100px;">
+ <b><hr> </b>
+  <p style="text-align: center; padding: 20px; text-transform: capitalize; color: lightseagreen;">All Rights reserved &copy;2023-Spotfinder by travel Life LLC. Made By ❤️Farhan Sahibzada</p>
+  
+  <hr>
+</div>
+  
+    </div>
+    
+    
+    
+
+
+
+
+
+
+  
+   
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+</body>
+
+</html>
